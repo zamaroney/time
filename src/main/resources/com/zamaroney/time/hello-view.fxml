@@ -13,30 +13,26 @@
     </padding>
    <Label fx:id="alert" alignment="CENTER" styleClass="alert, alert-info" text="timer status" />
 
-    <Label fx:id="timer" alignment="CENTER" styleClass="h4, text-success" text="00:00" />
-   <HBox alignment="CENTER" prefHeight="12.0" prefWidth="127.0">
-      <children>
-         <TextField fx:id="enterMinutes" promptText="Enter Minutes" />
-      </children>
-   </HBox>
+    <Label fx:id="timer" alignment="CENTER" styleClass="h4, text-success" text="00:00:00" />
+    <HBox alignment="CENTER" prefHeight="12.0" prefWidth="127.0">
+        <TextField fx:id="enterMinutes" promptText="Enter Minutes"/>
+    </HBox>
    <Button fx:id="btnSetTime" onAction="#setTime" styleClass="btn, btn-primary" text="Set Time" />
-   <HBox alignment="CENTER">
-      <children>
-         <Button fx:id="btnStart" onAction="#startTimer" styleClass="btn, btn-primary" text="Start">
-            <HBox.margin>
-               <Insets left="2.0" right="2.0" />
-            </HBox.margin>
-         </Button>
-         <Button fx:id="btnStop" onAction="#stopTimer" styleClass="btn, btn-primary" text="Stop">
-            <HBox.margin>
-               <Insets left="2.0" right="2.0" />
-            </HBox.margin>
-         </Button>
-          <Button fx:id="btnReset" onAction="#resetTimer" styleClass="btn, btn-primary" text="Reset">
-            <HBox.margin>
-               <Insets left="2.0" right="2.0" />
-            </HBox.margin>
-         </Button>
-      </children>
-   </HBox>
+    <HBox alignment="CENTER">
+        <Button fx:id="btnStart" onAction="#startTimer" styleClass="btn, btn-primary" text="Start">
+           <HBox.margin>
+               <Insets left="2.0" right="2.0"/>
+           </HBox.margin>
+        </Button>
+        <Button fx:id="btnStop" onAction="#stopTimer" styleClass="btn, btn-primary" text="Stop">
+           <HBox.margin>
+               <Insets left="2.0" right="2.0"/>
+           </HBox.margin>
+        </Button>
+        <Button fx:id="btnReset" onAction="#resetTimer" styleClass="btn, btn-primary" text="Reset">
+          <HBox.margin>
+              <Insets left="2.0" right="2.0"/>
+          </HBox.margin>
+        </Button>
+    </HBox>
 </VBox>

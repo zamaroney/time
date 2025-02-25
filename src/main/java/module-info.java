@@ -4,6 +4,7 @@ module com.zamaroney.time {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires javafx.media;
 
     opens com.zamaroney.time to javafx.fxml;
     exports com.zamaroney.time;
