@@ -35,7 +35,7 @@ public class HelloController {
     @FXML
     public void setTime() {
         alert.setText("Timer Set");
-        remainingTime = Integer.parseInt(enterMinutes.getText());
+        remainingTime = Integer.parseInt(enterMinutes.getText())*60;
         timer.setText(formatTime(remainingTime));
     }
 
