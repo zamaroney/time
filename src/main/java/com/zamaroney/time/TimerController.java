@@ -2,7 +2,6 @@ package com.zamaroney.time;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,7 +11,7 @@ import javafx.util.Duration;
 
 import java.util.Objects;
 
-public class HelloController {
+public class TimerController {
     private int remainingTime = 0;
     private Timeline timeline;
     private AudioClip alarmSound;
